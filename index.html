@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio QA Engineer | Adriyan Setiawan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Animasi (Blobs) -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Floating Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span class="theme-text">Dark Mode</span>
+    </button>
+
+    <header>
+        <nav>
+            <div class="logo">QA.Portofolio</div>
+            <div class="nav-right">
+                <ul id="navMenu">
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#certifications">Sertifikasi</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="gradient-text">Halo, Saya Adriyan Setiawan</h1>
+        <p style="font-size: 1.25rem; color: var(--primary-color); font-weight: 600; min-height: 30px;">
+            <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p style="max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.1rem; line-height: 1.8;">
+            Berdedikasi untuk memastikan perangkat lunak bebas dari <i>bug</i>. Menggabungkan ketelitian
+            pengujian manual dan kecepatan automasi untuk menghadirkan pengalaman pengguna yang mulus dan dapat
+            diandalkan.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#projects" class="btn">Lihat Dokumentasi QA</a>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Keahlian & Tools</h2>
+        <hr style="border: 0; height: 2px; background: var(--primary-color); width: 50px; margin: 0 0 2rem 0;">
+        <div class="grid">
+            <div class="card">
+                <h3>Manual Testing</h3>
+                <p>Merancang strategi pengujian menyeluruh melalui Test Plan terstruktur, pembuatan Test Case detail,
+                    Uji Regresi, serta Bug Reporting yang akurat untuk memastikan kualitas rilis yang sempurna.</p>
+            </div>
+            <div class="card">
+                <h3>Automation Testing</h3>
+                <p>Membangun <i>framework Automation Testing</i> E2E yang handal dan <i>scalable</i> untuk platform Web,
+                    menerapkan <i>clean code</i> guna meningkatkan efisiensi dan mempercepat rilis produk.</p>
+            </div>
+            <div class="card">
+                <h3>Tech Stack & Tools</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg"
+                            alt="Cypress" width="32" height="32">
+                        <div>
+                            <strong>Cypress</strong>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                            width="32" height="32">
+                        <div>
+                            <strong>Postman</strong>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://jmeter.apache.org/images/logo.svg" alt="JMeter" width="40" height="32"
+                            style="object-fit: contain;">
+                        <div>
+                            <strong>JMeter</strong>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                            alt="Trello" width="32" height="32">
+                        <div>
+                            <strong>Trello</strong>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma" width="32" height="32">
+                        <div>
+                            <strong>Figma</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="fade-in">
+        <h2>Sertifikasi & Lisensi</h2>
+        <hr style="border: 0; height: 2px; background: var(--primary-color); width: 50px; margin: 0 0 2rem 0;">
+        <div class="grid" style="margin-top: 1.5rem;">
+            <!-- Certificate 1 -->
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6"></circle>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                    <h3 style="margin: 0; font-size: 1.2rem;">Bootcamp Quality Assurance</h3>
+                </div>
+                <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Penyelenggara:</strong> Sanbercode</p>
+                <p style="font-size: 0.95rem;">Lulus Bootcamp QA intensif. Menguasai fundamental SDLC, Manual Testing,
+                    API Testing (Postman), dan Automation (Cypress).</p>
+                <a href="https://sanbercode.com/certificate/in/90750a1c-0685-4066-a6e9-d4bca330a956"
+                    class="project-link" style="margin-top: 1rem;" target="_blank">Lihat Sertifikat</a>
+            </div>
+
+
+            <!-- Certificate 2 -->
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6"></circle>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                    <h3 style="margin: 0; font-size: 1.2rem;">Event Online QA</h3>
+                </div>
+                <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Penyelenggara:</strong> Dibimbing.id</p>
+                <p style="font-size: 0.95rem;">Berpartisipasi aktif dalam Event "Anti-Mainstream Career: Jadi QA
+                    Engineer Gaji Tinggi Tanpa Harus Jago Coding!".</p>
+                <a href="https://drive.google.com/file/d/1dAEkaEKXvHSmKPEQMNEvPl3U6S-Ivko3/view?usp=sharing"
+                    class="project-link" style="margin-top: 1rem;">Lihat Sertifikat</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Proyek QA</h2>
+        <hr style="border: 0; height: 2px; background: var(--primary-color); width: 50px; margin: 0 0 2rem 0;">
+        <div class="grid">
+
+            <div class="card">
+                <h3>Test Plan (Webtoon)</h3>
+                <p>Dokumen perencanaan pengujian komprehensif (Test Plan) untuk aplikasi Webtoon, mencakup strategi,
+                    ruang lingkup (<i>scope</i>), dan jadwal pengujian.</p>
+                <a href="https://docs.google.com/document/d/1JO9U7OglBDhoZIkRPK8CAtWaDkRaLdEm/edit?usp=sharing&ouid=111511916746216957914&rtpof=true&sd=true"
+                    class="project-link">Lihat Dokumen</a>
+            </div>
+
+            <div class="card">
+                <h3>Test Case (Login OrangeHRM)</h3>
+                <p>Perancangan skenario uji (Test Case) terstruktur untuk fitur Login pada OrangeHRM, mencakup pengujian
+                    fungsional dengan <i>positive</i> dan <i>negative case</i>.</p>
+                <a href="https://docs.google.com/spreadsheets/d/13_Bml5m9lff8SQOyV9vorUm5FQQ6F69r/edit?usp=sharing&ouid=111511916746216957914&rtpof=true&sd=true"
+                    class="project-link">Lihat Dokumen</a>
+            </div>
+
+            <div class="card">
+                <h3>Bug Report</h3>
+                <p>Contoh pelaporan bug UI/UX pada status bar aplikasi: Ikon sinyal terlihat <i>mirrored</i> dan tidak
+                    sejajar. Dilengkapi dengan detail seperti <i>Steps to Reproduce</i>, <i>Expected vs Actual
+                        Result</i>, <i>Severity</i>, dan <i>Priority</i>.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1RuKsVItQ1PGleqARtILOG9toB8_6Nzeg/edit?usp=drive_link&ouid=111511916746216957914&rtpof=true&sd=true"
+                    class="project-link">Lihat Dokumen</a>
+            </div>
+
+            <div class="card">
+                <h3>E2E Automation (OrangeHRM)</h3>
+                <p>Proyek akhir bootcamp: Membangun automasi <i>End-to-End</i> (E2E) untuk fitur Login, Lupa Password,
+                    dan Dashboard (Directory) pada website OrangeHRM menggunakan pola <i>Page Object Model (POM) </i>
+                    dan
+                    <i>Intercept</i>.
+                </p>
+                <a href="https://github.com/Adriyanz1/orangehrm-login-test-automation" class="project-link">Buka
+                    Repository</a>
+            </div>
+
+            <div class="card">
+                <h3>Manual & Automation API Testing</h3>
+                <p>Pengujian fungsional API secara manual dan otomatisasi pada <i>fakeapi.platzi.com</i>, mencakup
+                    pelaporan hasil uji interaktif (HTML Report & Dashboard).</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <a href="./API/report.html" target="_blank" class="project-link">Lihat HTML Report</a>
+                    <a href="./API/dasboard.html" target="_blank" class="project-link">Lihat Dashboard</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Performance Testing (JMeter)</h3>
+                <p>Studi kasus pengujian performa Aplikasi Manajemen Stok Barang menggunakan Apache JMeter.
+                    Mensimulasikan 50 <i>concurrent users</i> untuk menganalisis <i>response time</i>,
+                    <i>throughput</i>, dan mengidentifikasi <i>bottleneck</i> pada sistem.
+                </p>
+                <a href="https://drive.google.com/file/d/1VUZyzni_chIXOoIYDC_arCmZ7psVynE3/view?usp=sharing"
+                    class="project-link">Lihat Dokumen</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--text-muted);">
+                Ingin melihat riwayat profesional saya selengkapnya?
+            </p>
+            <a href="./CV.pdf" class="btn btn-outline" download title="Download CV (PDF)"
+                style="padding: 1rem 3rem; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV Saya
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in" style="text-align: center;">
+        <h2>Mari Berkolaborasi</h2>
+        <p>Siap membantu tim Anda memastikan kualitas produk dan merilis aplikasi yang andal. Jangan ragu untuk
+            menghubungi saya untuk mendiskusikan peluang kerja sama.</p>
+        <p style="margin-top: 2rem;">
+            <strong>Email:</strong> adriyan21setiawan@gmail.com | <strong>Instagram:</strong> <a
+                href="https://www.instagram.com/adriyan21_/"
+                style="color: var(--primary-color); text-decoration: none; font-weight: bold;">@adriyan21_</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Adriyan Setiawan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
