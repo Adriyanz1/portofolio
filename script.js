@@ -1,11 +1,14 @@
 // 1. Logika Fitur Dark/Light Mode
 const themeToggle = document.getElementById('themeToggle');
 const themeText = document.querySelector('.theme-text');
-const currentTheme = localStorage.getItem('theme') || 'light';
+const currentTheme = localStorage.getItem('theme') || 'dark';
 
 if (currentTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     if (themeText) themeText.textContent = 'Light Mode';
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    if (themeText) themeText.textContent = 'Dark Mode';
 }
 
 themeToggle.addEventListener('click', () => {
