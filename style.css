@@ -530,6 +530,40 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 9998;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .theme-toggle {
@@ -542,6 +576,12 @@ footer {
     .theme-toggle .theme-text {
         display: none;
     }
+
+    .scroll-to-top {
+        bottom: 5rem;
+        right: 1.5rem;
+    }
+
     .menu-toggle {
         display: flex;
     }
