@@ -186,7 +186,7 @@ nav a.active {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: fixed;
-    bottom: 2rem;
+    top: 6rem;
     right: 2rem;
     z-index: 9999;
 }
@@ -567,8 +567,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .theme-toggle {
-        bottom: 1.5rem;
-        top: auto;
+        top: 5rem;
         right: 1.5rem;
         padding: 0.8rem;
     }
